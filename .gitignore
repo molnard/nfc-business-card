@@ -1,3 +1,4 @@
+# Local secrets and credentials
 .env
 .env.*
 *.pem
@@ -7,27 +8,31 @@
 *.crt
 *.cer
 
+# Python caches
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 
+# OS and editor files
 .DS_Store
 Thumbs.db
 desktop.ini
 .idea/
 .vscode/
 
+# Build/cache output
 dist/
 build/
 out/
 .cache/
 
+# Codex-local attachments can contain private screenshots or files.
 .codex-remote-attachments/
 
-# Legacy prototype assets kept out of the public repository if they still exist
-# locally because of filesystem locks.
+# Obsolete local prototype exports. The public repo keeps only the current
+# Bambu project and the addcontact QR assets.
 /davidmolnar-dev-business-card.3mf
 bambu/davidmolnar-dev-business-card.3mf
 bambu/davidmolnar-dev-business-card-addcontact.3mf
@@ -41,4 +46,3 @@ assets/qr-cardurl*
 bambu/nfc-card-84x52x1p4-*
 bambu/card-*-bambu*
 bambu/qr-c-bambu.svg
-tools/__pycache__/

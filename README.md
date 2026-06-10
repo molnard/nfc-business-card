@@ -4,6 +4,8 @@
 
 Customized 3D printed NFC business card for Dávid Molnár.
 
+The current printed card does not include a QR code. QR assets are kept only as a future fallback option because small printed QR codes are difficult to print reliably and no QR sticker has been prepared yet.
+
 The production NFC tag should be programmed with this exact URL:
 
 ```text
@@ -16,17 +18,19 @@ https://davidmolnar.dev/addcontact
 
 - `bambu/davidmolnar-dev-business-card-public.3mf` - current Bambu Studio project file
 - `assets/preview.jpg` - public product preview image
-- `assets/qr-addcontact.svg` - QR code for the production contact URL
-- `assets/qr-addcontact.png` - phone-testable QR image for the production contact URL
+- `assets/qr-addcontact.svg` - optional future QR fallback for the production contact URL
+- `assets/qr-addcontact.png` - optional phone-testable QR image for the production contact URL
 - `docs/design-decisions.md` - NFC/contact-flow decisions from the project conversations
 - `docs/print-workflow.md` - Bambu Studio and NFC programming workflow
-- `tools/generate_qr_assets.py` - regenerates the `/addcontact` QR assets
+- `tools/generate_qr_assets.py` - regenerates optional `/addcontact` QR assets
 
-## Regenerate QR Assets
+## Optional QR Assets
 
 ```bash
 python tools/generate_qr_assets.py
 ```
+
+These QR files are not part of the current printed card. They are kept for a possible later sticker, insert, or alternate card revision.
 
 ## Print Notes
 

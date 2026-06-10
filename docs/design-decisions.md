@@ -35,6 +35,12 @@ URL-based NFC requires internet access. If offline contact saving becomes a requ
 
 For this public version, the card prioritizes the cross-platform URL flow.
 
+## QR Code Decision
+
+The current printed card does not include a QR code. Printing a small QR code reliably on the 3D printed surface is difficult, and a QR sticker has not been prepared yet.
+
+The generated QR assets are kept only as a future fallback option. They may become useful later for a sticker, an insert, or a revised card model.
+
 ## Privacy Decision
 
 Earlier NFC Tools screenshots contained private contact details, address information, and NFC tag serial data. Those screenshots must not be published.

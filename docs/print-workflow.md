@@ -33,10 +33,17 @@ Suggested NFC Tools PRO flow:
 ## Printing Notes
 
 - Open the current 3MF in Bambu Studio.
+- The current card is NFC-first and does not include a printed QR code.
 - Use the existing pause workflow in the project file to insert the NFC sticker.
 - Place the sticker carefully in the recessed area before resuming the print.
 - Avoid metallic foil, magnetic material, carbon-filled filament, or metal backing near the NFC antenna.
 - Test the tag before and after the print.
+
+## Optional QR Fallback
+
+QR assets exist for possible future use, but they are not part of the current printed card.
+
+Small QR codes are difficult to print cleanly on this surface. If QR fallback becomes necessary later, prefer a tested sticker or another reliable non-FDM method before treating it as production-ready.
 
 ## Validation
 
